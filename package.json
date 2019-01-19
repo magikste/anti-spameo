@@ -1,6 +1,6 @@
 {
   "name": "anti-spameo",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Modulo de Discord para prevenir el spam en tu servidor!",
   "main": "antispameo.js",
   "scripts": {
