@@ -1,0 +1,25 @@
+{
+  "name": "anti-spameo",
+  "version": "1.0.0",
+  "description": "Modulo de Discord para prevenir el spam en tu servidor!",
+  "main": "antispameo.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/magikste/anti-spameo.git"
+  },
+  "keywords": [
+    "antispam",
+    "nospam",
+    "discord",
+    "santiago"
+  ],
+  "author": "Santiago#0001",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/magikste/anti-spameo/issues"
+  },
+  "homepage": "https://github.com/magikste/anti-spameo#readme"
+}
