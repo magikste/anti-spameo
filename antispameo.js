@@ -52,7 +52,7 @@ module.exports = function (bot, options) {
       if (msgMatch == maxDuplicadosWarn && !warned.includes(msg.author.id)) {
         warn(msg, msg.author.id);
       }
-      if (msgMatch == maxDuplicadosKick && !kick.includes(msg.author.id)) {
+      if (msgMatch == maxDuplicadosKick && !kicked.includes(msg.author.id)) {
         kick(msg, msg.author.id);
       }
 
@@ -89,7 +89,7 @@ module.exports = function (bot, options) {
    */
   function warn(msg, userid) {
     warned.push(msg.author.id);
-    msg.channel.send(mensajeAdvertencia)
+    msg.channel.send(msg.author + " " + mensajeAdvertencia)
   }
 
   /**
@@ -110,7 +110,7 @@ module.exports = function (bot, options) {
     var user = msg.channel.guild.members.find(member => member.user.id === msg.author.id);
     if (user) {
       user.kick().then((member) => {
-        msg.channel.send(mensajeKick)
+        msg.channel.send(msg.author + " " + mensajeKick)
         return true;
      }).catch(() => {
         msg.channel.send(`No tengo los permisos suficientes para kickear a ${msg.author}!`);
